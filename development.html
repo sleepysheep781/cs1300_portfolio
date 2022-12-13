@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style_d.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ 
+</head>
+<body>
+    <div class="body-container">
+        <!-- head title -->
+        
+        <section class="home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            <a href="index.html#portfolio">Return</a>
+            <div class="home-text">
+                <h1>Development</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Introduction</h2>
+                <p class="block">
+                    In this project, I used React to create a list-based interface with filtering, sorting and aggregator.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2><a href="https://sleepysheep781.github.io/react-stencil">Link</a> to Deployed Website</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Goal and Value of the Application</h2>
+                <p class="block">This application aims to implement the online shopping service for a bakery. 
+                    Users can filter items by the combination of 2 filtering categories (Types and Dietary Restrictions). 
+                    Users can also sort items by price or calories in descending order. 
+                    Users can add items to the shopping cart, get the total price and easily increase or decrease 
+                    the quantity of items in the cart.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Usability Principles Considered</h2>
+                    <div class="block"> 
+                        <h3>1. Aesthetic and minimalist design </h3>
+                        <p>The page doesn't have any irrelevant information and consists of header name, filtering form, 
+                            sorting dropdown, image gallery, and shopping-cart aggregator. Each part has a different color 
+                            so that users can distinguish them.
+                        </p>
+                    </div>
+        
+                    <div class="block"> 
+                        <h3>2. Visibility of system status</h3>
+                        <p>The page always keeps users informed about what is going on with appropriate titles.</p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>3. Consistency and standards</h3>
+                        <p>The application is designed with consistent styling such as font size, font color, font style, image display, etc.</p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>4. Recoginition rather than recall</h3>
+                        <p>Instructions are visible. Users don't need to remember any information.</p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>5. User control and freedom</h3>
+                        <p>The shopping cart supports undo and redo. Users can easily add to or remove from the cart.</p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>6. Match between system and real world</h3>
+                        <p>Following real-world conventions, the application speaks users' language with words, icons, concepts familiar to users. 
+                            For example, a radio button indicates a single selection, while a checkbox allows multiple selections.</p>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Organization of Components</h2>
+                    <div class="block"> 
+                        <h3>1. Rendering </h3>
+                        <p>I defined a BakeryItem component, and used props and useState to render json data on the page.
+                        </p>
+                    </div>
+        
+                    <div class="block"> 
+                        <h3>2. Filtering</h3>
+                        <p>I implemented two filtering categories: Types and Dietary Restrictions. Users can only choose one item under 
+                            Types category (radio button) but multiple item under Dietary Restrictions category (checkbox).
+                        </p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>3. Sorting</h3>
+                        <p>I implemented sorting method in dropdown list. Users can get data sorted by price or calories in descending order.</p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>4. Aggregator</h3>
+                        <p>I defined a CartItem component, and used props and useState to implement a shopping cart 
+                            that aggregates prices and makes it easy for users to add or remove items.</p>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>How Data is Passed Down Through Components</h2>
+                <p class="block">I used forEach function to fetch data from json file and store data in bakeryData array.</p>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="heading">
+                <h2>How the User Triggers State Changes</h2>
+                    <div class="block"> 
+                        <h3>1. Filtering</h3>
+                        <p>"Types" only supports single selection. "All" is selected by default. Whenever users select one of the radio button, 
+                            selectFilterType function is triggered, which passes selected type value, compares it with the type of every item 
+                            and filters the same ones. "Dietary Restrictions" allows multiple selections. When users select any radio button, 
+                            filterRestriction funciton is triggers, which passes the checkbox values, checks restrictionSet set, 
+                            if the value doesn't exist in the set, add it to the set, otherwise, remove it from the set. 
+                            When restrictionSet set is not empty, iterating the restriction value and filtering the items' restriction attribute.
+                        </p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>2. Sorting</h3>
+                        <p>When users select sorting value in the dropdown, setSortType funciton is triggered, which passes the sorting value. 
+                            In useEffect, sorting the items and calling setSortList and then rendering items in descending order.
+                        </p>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>3. Aggregator</h3>
+                        <p>When users click the Add to cart button in the item card or "+" button in the shopping cart, 
+                            addToCart function is triggered and its logic is checking the cart: if the selected item is already in the cart, 
+                            increase its quantity; otherwise, set its quantity to 1 and add it to cart. </p>
+                        <p>When users click the "-" button in the shopping cart, removeFromCart function is triggered and its logic is checking the cart: 
+                            if the selected item is already in the cart, decrease its quantity, if its quantity is 0, remove it from the cart; 
+                            otherwise, set its quantity to 0. </p>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Credit</h2>
+                <p class="block">Data is from https://pastichefinedesserts.com/menu</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Conclusion</h2>
+                <p class="block">
+                    In this project, I learned how to use React for web development. I used interface components,
+                    and tie the components to an internal data state to update the data. I also applied
+                    some useful React hooks to "hook into" React state and lifecycle features from function components.
+                    Hooks used include useState, useEffect, and useCallback.
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>Create By sleepysheep781 @ Providence, RI</p> 
+    </div>
+</body>
+</html>

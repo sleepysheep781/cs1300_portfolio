@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ 
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="head">
+        <a href="#" class="logo">My Portfolio</a>
+ 
+        <div class="bx bx-menu" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </header>
+    <!-- Home -->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Hello!</h1>
+            <span>Welcome to my portfolio for CSCI 1300 course!</span>
+            
+        </div>
+        <div class="home-img">
+            <img src="img/CSCI.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        
+        <!-- About Content -->
+        <div class="about-container">
+            
+            <div class="about-img">
+                <img src="img/dog.jpeg" alt="">
+            </div>
+
+            <div class="about-text">
+                <p>Hi there!</p>
+                <p>I am a graduate student at Brown University, majoring in Computer Science. </p>
+                <p>I'm interested in software engineering and want to develop cool products that facilitate people's lives.</p>
+                
+                <!--p>I'm also interested in deep learning and machine learning, especially their application to computer vision.</p-->
+
+                <div class="social">
+                    <a href="#"><i class='bx bxs-envelope'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    
+                </div>
+                <div>
+                    <a href="resume_temp.pdf" class="btn">Download CV</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>My Portfolio</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-img">
+                <a href="persona.html"><img src="img/storyboard_cover.png" alt=""></a>
+                <span><div class="desc">Personas & Storyboarding</div></span>
+                <div class="explain">
+                    A classic UX task that involves observing real users interacting with an interface, 
+                    interviewing these individuals about their experiences, 
+                    creating two personas based on these users, 
+                    and illustrating a storyboard for one of the personas.
+                </div>
+            </div>
+            
+            <div class="portfolio-img">
+                <a href="responsive.html"><img src="img/responsive.png" alt=""></a>
+                <span><div class="desc">Responsive Redesign</div></span>
+                <div class="explain"> A redesigned version of an existing website based on low-fidelity and high-fidelity prototypes 
+                    created after analyzing flaws in the existing interface.
+                </div>
+            </div>
+
+            <div class="portfolio-img">
+                <a href="development.html"><img src="img/development.png" alt=""></a>
+                <span><div class="desc">Development</div></span>
+                <div class="explain">An interactive list-based interface with filtering, sorting and aggregation features made in React.</div>
+                
+            </div>
+           
+            <div class="portfolio-img">
+                <a href="interative.html"><img src="img/iterative.png" alt=""></a>
+                <span><div class="desc">Iterative Design (Group Project)</div></span>
+                <div class="explain">
+                    An interactive interface for an emerging startup; 
+                </div>
+                <div class="explain">
+                    working in a group of 4.
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>Create By sleepysheep781 @ Providence, RI</p> 
+    </div>
+
+ 
+ 
+    <!-- Link To JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

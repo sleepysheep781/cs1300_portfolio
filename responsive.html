@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./css/style_r.css">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ 
+</head>
+<body>
+    <div class="body-container">
+        <!-- head title -->
+        
+        <section class="home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+            <a href="index.html#portfolio">Return</a>
+            <div class="home-text">
+                <h1>Responsive Redesign</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Introduction</h2>
+                <p class="block">For this project, I first selected an existing website, 
+                then analyzed it and identified its flaws based on usability and accessibility criteria. 
+                Next, I redesigned the website to address the usability issues detected in the previous step, 
+                and then created low-fi and high-fidelity prototypes for various screen sizes. 
+                In the end, I built a responsive website based on these prototypes.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2><a href="https://sleepysheep781.github.io/responsive_redesign_handin/redesign.html">Link</a> to redesign page</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Identifying Usability Problems</h2>
+                    <div class="block"> 
+                        <h3>1. Picking a Web page </h3>
+                        <p>The chosen website is the ordering website of <a href="https://www.chongqinghouse.net/">Chong Qing House.</a></p>
+                        <p>Why choose it? This site is accessible to anyone, but it's not that popular. Dishes at Chong Qing House taste good, 
+                            but its ordering site is hard to use. So I want to redesign it.
+                        </p>
+                    </div>
+        
+                    <div class="block"> 
+                        <h3>2. Finding Problems</h3>
+                        <div class="block"> 
+                        <h4>(1) The layout design violates aesthetic and minimalist design principles.</h4>
+                        <p>Currently there are multiple navbars and everything is displayed on one page. 
+                            It is best to integrate category and cart items into the navigation bar, 
+                            so that users can access different web pages in the navigation bar.
+                        </p>
+                        </div>
+
+                        <div class="block"> 
+                        <h4>(2) The page doesn't provide enough help and documentation. </h4>
+                        <p> For example, I have no idea about the difference between Vegetable Egg Rolls and Shanghai Spring Rolls. 
+                            Both of them are rolls and share the same price. I don't know which one to order. 
+                            Another example is the absence of a search bar. If I want to order Double Pork, 
+                            I need to look in the long dish list, which is quite annoying.
+                        </p>
+                        </div>
+                        <div class="block"> 
+                        <h4>(3) Photo album. </h4>
+                        <p>
+                            Some photos have captions with the name of the dish, while most images don't. 
+                            There are even several identical images.
+                        </p>
+                        </div>
+                        <div class="block"> 
+                        <h4>(4) The Menu page doesn’t minimize user’s memory load. </h4>
+                        <p>
+                            There is only text for each dish. 
+                            The corresponding image is in another page. If the user want to know what Wonto Soup looks like, 
+                            he need to recall or look at the image in the Photo album page and then go back to order. 
+                            Instead, if a user click the name of a dish, it would be better to display its image and order options.
+                        </p>
+                        </div>
+                        <div class="block"> 
+                            <h4>(5) Payment methods indicated by the pictures and text are inconsistent. </h4>
+                        <p>
+                            The payment methods shown in the pictures 
+                            are credit card and cash, while the payment methods indicated by the text are WeChat, Alipay, credit card and BOA transfer.
+                        </p>
+                        </div>
+                        <div class="block"> 
+                            <h4>(6) Low flexibility and efficiency of use. </h4>
+                        <p>
+                            The website doesn’t allow users to tailor frequent actions. 
+                            There is no option for user to perform the same order as last time.
+                        </p>
+                        </div>
+                        <div class="block"> 
+                            <h4>(7) No error prevention. </h4>
+                        <p>
+                           If the user clicks the delete button by mistake, 
+                           there is no confirmation message before the action is performed. 
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>3. Accessibility</h3>
+                    
+                        <ul class="ap-gallery">            
+                            <li><img src="img/ap1.png" alt="" /></li>
+                            <li><img src="img/ap2.png" alt="" /></li>
+                            <li><img src="img/ap3.png" alt="" /></li>
+                            <li><img src="img/ap4.png" alt="" /></li>
+                        </ul>
+            
+                        <p>I agree with the problems detected.</p>
+
+                        <div class="block"> 
+                            <h4>(1) The images of checkout option don’t have alternative text. </h4>
+                            <p>Adding alternative text to image is important. Because it can pass the content of an image to a blind person 
+                                using a screen reader. It is useful for a sighted person when the image fails to load. 
+                                It is also used for search engine trying to understand the content of a web page.
+                            </p>
+                            </div>
+    
+                            <div class="block"> 
+                            <h4>(2) The opening hours table has broken ARIA reference problem.</h4>
+                            <p> Without an ARIA reference target, a screen readers won't recognize these relationships, 
+                                and blind users may miss key information.
+                            </p>
+                            </div>
+                            <div class="block"> 
+                            <h4>(3) The main Menu part doesn’t have sufficient contrast between text and its background color.</h4>
+                            <p>
+                                According to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG 2.0</a>, 
+                                the contrast ratio between text and its background should be at least 4.5:1. 
+                                In the main Menu part, the background color is #FAD3C7, the text color is #E04406, 
+                                their contrast ratio is 3.04:1. This is not friendly to users with color blindness or low vision.
+                            </p>
+                            </div>
+                            <div class="block"> 
+                            <h4>(4) There are redundant links in the main Menu part.</h4>
+                            <p>
+                                The image and text lead to the same address.
+                            </p>
+                            </div>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="heading">
+                <h2>Visual Redesign</h2>
+                    <div class="block"> 
+                        <h3>1. Low-fidelity Wireframing </h3>
+                        <div class="img-gallery">
+                            <div class="column">
+                                <div class="desc">Phone</div>
+                                <img src="img/lowfi-phone.png" alt="">
+                            </div>
+                            <div class="column">
+                                <div class="desc">Tablet</div>
+                                <img src="img/lowfi-tablet.png" alt="">
+                            </div>
+                            <div class="column">
+                                <div class="desc">Desktop</div>
+                                <img src="img/lowfi-desktop.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="block"> 
+                        <h3>2. Visual Design Style Guide</h3>
+                        <div class="portfolio-img">
+                        <img src="img/vs_guide.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="block"> 
+                        <h3>3. High-Fidelity Prototyping </h3>
+                            <div class="portfolio-img">
+                                <img src="img/highfi-phone.png" alt="">
+                            </div>
+                            <div class="portfolio-img">
+                                <img src="img/highfi-tablet.png" alt="">
+                            </div>
+                            <div class="portfolio-img">
+                                <img src="img/highfi-desktop.png" alt="">
+                            </div>
+                    </div>
+            </div>
+        </section>
+
+       
+
+        <section>
+            <div class="heading">
+                <h2>Conclusion</h2>
+                <p class="block">In this project, I got more familiar with usability and accessibility standards
+                    by applying them to analyze a real website and identify its flaws. I also learned to 
+                    use a combination of flexbox, grid, responsive units, media queries to make the site responsive
+                    and suitable for mobile, tablet, and desktop.
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p>Create By sleepysheep781 @ Providence, RI</p> 
+    </div>
+</body>
+</html>
